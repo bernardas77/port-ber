@@ -11,26 +11,32 @@ const Portfolio = () => {
     {
       id: 1,
       src: '/image-search-app.jpg',
+      href: 'https://github.com/bernardas77/image-search-app'
     },
     {
       id: 2,
       src: '/mintmaster.jpg',
+      href: 'https://github.com/bernardas77/nft-contract'
     },
     {
       id: 3,
       src: 'pong.jpg',
+      href: 'https://github.com/bernardas77/pong-game'
     },
     {
       id: 4,
       src: 'space-invaders.jpg',
+      href: 'https://github.com/bernardas77/space-invaders'
     },
     {
       id: 5,
       src: 'bot.png',
+      href: 'https://github.com/bernardas77/discord-crypto-bot'
     },
     {
       id: 6,
       src: 'me.jpg',
+      href: 'https://github.com/bernardas77/port-ber'
     },
   ]
 
@@ -45,13 +51,15 @@ const Portfolio = () => {
 
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
           {
-            portfolios.map(({id, src}) => (
+            portfolios.map(({id, src, href}) => (
               <div key={id} className=' shadow-md shadow-gray-600 rounded-lg'>
                 
-                <div style={{backgroundImage: `url(${src})`}} alt="" className='rounded-md duration-200 hover:scale-105 lg:h-[180px] lg:w-[320px] bg-cover bg-center'>
-                  <div className='group hover:bg-black/40 w-full h-full'>
-                    <button className='hidden group-hover:block p-3 text-black bg-white rounded-md'>Kodas</button>
-                  </div>
+                <div style={{backgroundImage: `url(${src})`}} alt="" className='rounded-md duration-200 hover:scale-105 lg:h-[180px] lg:w-[320px] bg-cover bg-center '>
+                  <a href={href} target='_blank' rel='noreferrer'>
+                    <div className='group hover:bg-black/40 w-full h-full relative'>
+                      <button className='hidden group-hover:block p-3 text-black bg-white rounded-md fixed left-1/2 -translate-x-[50%] top-1/2 -translate-y-[50%]'>Kodas</button>
+                    </div>
+                  </a>
                 </div>
               </div>
             ))
