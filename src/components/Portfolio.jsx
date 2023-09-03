@@ -14,23 +14,23 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      src: '',
+      src: '/mintmaster.jpg',
     },
     {
       id: 3,
-      src: '',
+      src: 'pong.jpg',
     },
     {
       id: 4,
-      src: '',
+      src: 'space-invaders.jpg',
     },
     {
       id: 5,
-      src: '',
+      src: 'bot.png',
     },
     {
       id: 6,
-      src: '',
+      src: 'me.jpg',
     },
   ]
 
@@ -48,10 +48,11 @@ const Portfolio = () => {
             portfolios.map(({id, src}) => (
               <div key={id} className=' shadow-md shadow-gray-600 rounded-lg'>
                 
-                <div style={{backgroundImage: `url(${portfolios[0].src})`}} alt="" className='rounded-md duration-200 hover:scale-105 lg:h-[180px] lg:w-[320px] '></div>
-              
-                
-                <button className='hidden hover:block m-auto p-3 text-black bg-slate-300'>Kodas</button>
+                <div style={{backgroundImage: `url(${src})`}} alt="" className='rounded-md duration-200 hover:scale-105 lg:h-[180px] lg:w-[320px] bg-cover bg-center'>
+                  <div className='group hover:bg-black/40 w-full h-full'>
+                    <button className='hidden group-hover:block p-3 text-black bg-white rounded-md'>Kodas</button>
+                  </div>
+                </div>
               </div>
             ))
           }
