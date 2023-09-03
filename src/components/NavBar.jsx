@@ -9,11 +9,11 @@ const NavBar = () => {
   const links = [
     {
       id: 1,
-      link: 'home'
+      link: 'pagrindinis'
     },
     {
       id: 2,
-      link: 'about'
+      link: 'apie'
     },
     {
       id: 3,
@@ -21,11 +21,11 @@ const NavBar = () => {
     },
     {
       id: 4,
-      link: 'experience'
+      link: 'patirtis'
     },
     {
       id: 5,
-      link: 'contact'
+      link: 'kontaktai'
     },
   ] 
 

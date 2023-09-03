@@ -12,7 +12,7 @@ const Home = () => {
   })
 
   return (
-    <div name='home' className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 pt-14 md:pt-0'>
+    <div name='pagrindinis' className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 pt-14 md:pt-0'>
       <div className='max-w-md md:max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row pt-10 md:pt-0'>
         <div className='flex flex-col justify-center items-center text-center'>
           <div className='flex flex-row'>
@@ -23,7 +23,7 @@ const Home = () => {
           </div>
           
           <p className='text-gray-300 pt-3 md:pt-6 pb-4 w-[100%] md:w-[90%] text-[15px] md:text-[20px]'>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium quas esse eveniet facere obcaecati amet quidem quia eum, dolorum nihil, eos cupiditate facilis odio magnam maiores, ut nam unde? Ad.
+            Sveiki, mano vardas Bernardas. Laisvalaikiu mėgstu programuoti, dalyvauti projektuose, domiuosi elektronine prekyba ir savo verslo kūrimu. Toliau pamatysite mano projektus bei technologijas, su kuriomis man teko dirbti. Su manimi susisiekti galite per LinkedIn, Gmail arba kontakto formą apačioje. Taip pat galite atsisiūsti mano rezume.
           </p>
 
           <div>

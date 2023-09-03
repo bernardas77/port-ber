@@ -6,6 +6,7 @@ import Python from '../assets/python.png'
 import React2 from '../assets/react.png'
 import Tailwind from '../assets/tailwind-css.png'
 import JS from '../assets/javascript.png'
+import CPP from '../assets/cpp.png'
 
 const Experience = () => {
 
@@ -52,16 +53,22 @@ const Experience = () => {
       title: 'Solidity',
       style: 'shadow-gray-200',
     },
+    {
+      id: 8,
+      src: CPP,
+      title: 'C++',
+      style: 'shadow-blue-300',
+    },
   ]
 
   return (
-    <div name='experience' className='bg-gradient-to-b from-gray-800 to-black w-full h-screen pt-14'>
+    <div name='patirtis' className='bg-gradient-to-b from-gray-800 to-black w-full h-screen pt-14'>
 
       <div className='max-w-screen-lg mx-auto flex flex-col justify-center w-full h-full text-white'>
         <div>
           <p className='text-4xl font-bold border-b-4 border-gray-500 inline py-2
           '>Patirtis</p>
-          <p className='py-6'>Tai yra technologijos, su kuriomis man teko dirbti</p>
+          <p className='py-6'>Tai yra technologijos, su kuriomis man teko dirbti.</p>
         </div>
 
         <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-8 text-center py-8 px-12 sm:px-0'>
