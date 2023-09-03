@@ -1,37 +1,36 @@
 import React from 'react'
-import ImageSearch from '../assets/image-search-app.jpg'
-import MintMaster from '../assets/mintmaster.jpg'
-import Pong from '../assets/pong.jpg'
-import SpaceInvaders from '../assets/space-invaders.jpg'
-import Bot from '../assets/bot.png'
-import Me from '../assets/me.jpg'
+// import MintMaster from '../assets/mintmaster.jpg'
+// import Pong from '../assets/pong.jpg'
+// import SpaceInvaders from '../assets/space-invaders.jpg'
+// import Bot from '../assets/bot.png'
+// import Me from '../assets/me.jpg'
 
 const Portfolio = () => {
 
   const portfolios = [
     {
       id: 1,
-      src: ImageSearch,
+      src: '/image-search-app.jpg',
     },
     {
       id: 2,
-      src: SpaceInvaders,
+      src: '',
     },
     {
       id: 3,
-      src: Bot,
+      src: '',
     },
     {
       id: 4,
-      src: MintMaster,
+      src: '',
     },
     {
       id: 5,
-      src: Pong,
+      src: '',
     },
     {
       id: 6,
-      src: Me,
+      src: '',
     },
   ]
 
@@ -48,11 +47,11 @@ const Portfolio = () => {
           {
             portfolios.map(({id, src}) => (
               <div key={id} className=' shadow-md shadow-gray-600 rounded-lg'>
-                <img src={src} alt="" className='rounded-md duration-200 hover:scale-105 lg:h-[180px] lg:w-[320px]'/>
-                <div className='flex items-center justify-center'>
-                  <button className='w-1/2 px-6 py-3 m-4 duration:200 hover:scale-105'>Demo</button>
-                  <button className='w-1/2 px-6 py-3 m-4 duration:200 hover:scale-105'>Kodas</button>
-                </div>
+                
+                <div style={{backgroundImage: `url(${portfolios[0].src})`}} alt="" className='rounded-md duration-200 hover:scale-105 lg:h-[180px] lg:w-[320px] '></div>
+              
+                
+                <button className='hidden hover:block m-auto p-3 text-black bg-slate-300'>Kodas</button>
               </div>
             ))
           }
